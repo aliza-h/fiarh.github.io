@@ -1,6 +1,4 @@
-<ul>
-* Interrogation
-* everything else TBD
-</ul>
+- Interrogation<br/>
+- everything else TBD
 
 <p>Grid format.</p>
