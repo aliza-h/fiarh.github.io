@@ -1,0 +1,68 @@
+.page { /* the entire webpage */
+	display: flex;
+	flex-direction: column;
+}
+
+div:not(.page) {
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid gray;
+}
+
+.main-page { /* for everything below the navigation bar */
+	display: flex;
+	flex-direction: column;
+	background-color: lavender;
+	align-items: center;
+}
+
+.desc {
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+button { /* style will be changed later */
+	color: black;
+	background-color: lightgrey;
+}
+
+table {
+	display: flex;
+
+}
+
+table TR {
+	/* make them wider */
+}
+
+table TD { /* change this to fit whole page */
+	width: 100px;
+	height: 100px;
+	border: 1px solid grey;
+}
+
+.navigation {
+	height: 80px;
+	justify-content: space-around;
+}
+
+.homepage-banner { /* Make sure the image scales properly! SVG? */
+	height: 300px; /* Make it responsive */
+}
+
+.intro {
+	flex-direction: row;
+	width: 90%; /* If I put it at 100%, it fills literally 100% of the parent div. It disregards the margin for some reason. */
+}
+
+.about-me {
+	flex-direction: column;
+	/*width: 70%;*/
+}
+
+.contact-me {
+	flex-direction: column;
+	width: 30%;
+	align-items: center;
+}
