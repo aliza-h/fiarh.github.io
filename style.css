@@ -29,11 +29,11 @@ button { /* style will be changed later */
 
 table {
 	display: flex;
-
 }
 
 table TR {
 	/* make them wider */
+	width: 80%;
 }
 
 table TD { /* change this to fit whole page */
