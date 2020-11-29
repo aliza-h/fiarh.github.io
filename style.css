@@ -3,6 +3,10 @@
 	flex-direction: column;
 }
 
+.homepage-banner {
+	height: 400px; /* Make it responsive */
+}
+
 div:not(.page) {
 	display: flex;
 	margin: 10px;
@@ -42,13 +46,28 @@ table TD { /* change this to fit whole page */
 	border: 1px solid grey;
 }
 
+table.writing {
+	display: flex;
+	border: 1px solid red;
+	width: 100%;
+	justify-content: center;
+}
+
+table.writing TD {
+	width: 50%;
+}
+
+table.software TD {
+	padding: 15px;
+}
+
+table.art {
+
+}
+
 .navigation {
 	height: 80px;
 	justify-content: space-around;
-}
-
-.homepage-banner { /* Make sure the image scales properly! SVG? */
-	height: 300px; /* Make it responsive */
 }
 
 .intro {
