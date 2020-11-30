@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Aliza Howe</title>
+	<link rel="stylesheet" href="style.css"/> <!-- rel means "RELationship to this document," and href means "Hypertext REFerence." -->
+</head>
+
+<body>
+	<!-- navigation -->
+	<div class="navigation">
+		<!-- home -->
+		<button class="type1"
+		style="
+		box-shadow: 0px 0px 50px #00E5DE,
+		0px 0px 50px #00E5DE inset;
+		border: 4px solid #7EFFFB;
+		color: #7EFFFB;
+		"
+		onClick="location.href='index.html'">home</button>
+
+		<!-- software -->
+		<button class="type2" onClick="location.href='software-projects.html'">software</button>
+
+		<!-- writing -->
+		<button class="type1" onClick="location.href='writing.html'">writing</button>
+
+		<!-- music -->
+		<button class="type2" onClick="location.href='music.html'">music</button>
+
+		<!-- visual art -->
+		<button class="type1" onClick="location.href='visual-art.html'">visual art</button>
+	</div>
+
+	<!-- banner with name, art, etc. -->
+	<div class="homepage-banner">
+		<img src="assets/aliza-graffiti.jpg" width=100% height=100%/>
+	</div>
+
+	<div class="main-page">
+
+		<div class="intro">
+			<div>
+				<!-- picture of me -->
+				<img src="assets/facebook-2017.jpg" width=300 height=300/>
+
+				<div class="about-me"> <!-- text intro -->
+					<h3>NAME: Aliza Howe.</h3>
+
+					<p>Self-taught guitarist, sci fi writer, student software developer.</p>
+				</div>
+			</div>
+
+			<div class="contact-me">
+				<h4>Contact Me</h4>
+				<!-- These all need to open in new tabs! -->
+				<button class="type1" onClick="location.href='https://github.com/fiarh'">Github</button>	<button class="type1" onClick="location.href='https://www.facebook.com/aliza.howe.14'">Facebook</button>
+				<button class="type1">email me</button>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="site-script.js"></script>
+</body>
+
+</html>
