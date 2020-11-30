@@ -1,34 +1,35 @@
-.page { /* the entire webpage */
+* {
+	background-color: #000A61; /* deep blue */
+	color: white;
+	font-family: sans-serif;
+}
+
+div {
 	display: flex;
-	flex-direction: column;
+	border: 1px solid grey;
 }
 
-.homepage-banner {
-	height: 400px; /* Make it responsive */
+button {
+	border: 4px solid #CCCCCC;
+	color: #CCCCCC;
+	width: 150px;
+	font-family: Monaco;
+	font-size: 1.2em;
+	text-transform: upperCase;
 }
 
-div:not(.page) {
-	display: flex;
-	margin: 10px;
-	padding: 10px;
-	border: 1px solid gray;
+button.type1:hover { /* the cyan lights */
+	box-shadow: 0px 0px 50px #00E5DE,
+	0px 0px 50px #00E5DE inset;
+	border: 4px solid #7EFFFB;
+	color: #7EFFFB;
 }
 
-.main-page { /* for everything below the navigation bar */
-	display: flex;
-	flex-direction: column;
-	background-color: lavender;
-	align-items: center;
-}
-
-.desc {
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-button { /* style will be changed later */
-	color: black;
-	background-color: lightgrey;
+button.type2:hover { /* the purple lights */
+	box-shadow: 0px 0px 50px #C177FF,
+	0px 0px 50px #C177FF inset;
+	border: 4px solid #D8A9FF;
+	color: #D8A9FF;
 }
 
 table {
@@ -48,7 +49,7 @@ table TD { /* change this to fit whole page */
 
 table.writing {
 	display: flex;
-	border: 1px solid red;
+	border: 1px solid grey;
 	width: 100%;
 	justify-content: center;
 }
@@ -61,8 +62,39 @@ table.software TD {
 	padding: 15px;
 }
 
-table.art {
+.art-row {
+	display: flex;
+	justify-content: center;
+}
 
+.art-elt {
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h4 {
+	text-align: center;
+}
+
+.homepage-banner {
+	height: 400px; /* cool image in your face */
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.main-page { /* for everything below the navigation bar */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.desc {
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .navigation {
@@ -72,11 +104,14 @@ table.art {
 
 .intro {
 	flex-direction: row;
-	width: 90%; /* If I put it at 100%, it fills literally 100% of the parent div. It disregards the margin for some reason. */
+	width: 100%;
+	justify-content: space-between;
+	padding: 10px;
 }
 
 .about-me {
 	flex-direction: column;
+	padding: 15px;
 	/*width: 70%;*/
 }
 
