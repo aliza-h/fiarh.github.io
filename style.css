@@ -1,12 +1,11 @@
 * {
-	background-color: #000A61; /* deep blue */
+	background-color: #241C3C; /* deep purple */
 	color: white;
 	font-family: sans-serif;
 }
 
 div {
 	display: flex;
-	border: 1px solid grey;
 }
 
 button {
@@ -32,47 +31,82 @@ button.type2:hover { /* the purple lights */
 	color: #D8A9FF;
 }
 
-table {
-	display: flex;
-}
-
-table TR {
-	/* make them wider */
-	width: 80%;
-}
-
-table TD { /* change this to fit whole page */
-	width: 100px;
-	height: 100px;
-	border: 1px solid grey;
-}
-
-table.writing {
-	display: flex;
-	border: 1px solid grey;
-	width: 100%;
-	justify-content: center;
-}
-
-table.writing TD {
-	width: 50%;
-}
-
-table.software TD {
+h1, h2, h3 {
+	font-family: Monaco;
 	padding: 15px;
+	font-size: 3em;
 }
 
-.art-row {
+h4, h5, h6 {
+	font-family: Monaco;
+}
+
+h1.type1, h2.type1, h3.type1 {
+	box-shadow: 0px 0px 50px #00E5DE,
+	0px 0px 50px #00E5DE inset;
+	border: 4px solid #7EFFFB;
+	color: #7EFFFB;
+}
+
+h1.type2, h2.type2, h3.type2 {
+	box-shadow: 0px 0px 50px #C177FF,
+	0px 0px 50px #C177FF inset;
+	border: 4px solid #D8A9FF;
+	color: #D8A9FF;
+}
+
+.table-row {
 	display: flex;
-	justify-content: center;
+	width: 90%;
+	justify-content: space-between;
+	margin: 15px;
 }
 
-.art-elt {
+.table-elt {
 	width: 500px;
 	height: 500px;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	padding: 25px;
 	align-items: center;
+	border: 4px solid #CCCCCC;
+	color: #CCCCCC;
+	font-family: Monaco;
+}
+
+.table-elt#type1 {
+	width: 40%;
+	height: 600px;
+	justify-content: center;
+}
+
+.table-elt#type1 + .table-elt {
+	align-items: flex-start;
+	font-size: 1em;
+	line-height: 25px;
+	height: 600px;
+}
+
+.table-elt#type1:hover {
+	box-shadow: 0px 0px 50px #00E5DE,
+	0px 0px 10px #00E5DE inset;
+	border: 4px solid #7EFFFB;
+	color: #7EFFFB;
+}
+
+.table-elt#type1:hover h4, .table-elt#type2:hover p {
+	color: #7EFFFB;
+}
+
+.table-elt#type2:hover {
+	box-shadow: 0px 0px 50px #C177FF,
+	0px 0px 10px #C177FF inset;
+	border: 4px solid #D8A9FF;
+	color: #D8A9FF;
+}
+
+.table-elt#type2:hover h4, .table-elt#type2:hover p {
+	color: #D8A9FF;
 }
 
 h4 {
@@ -81,7 +115,7 @@ h4 {
 
 .homepage-banner {
 	height: 400px; /* cool image in your face */
-	width: 100%;
+	/*width: 100%;*/
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -92,9 +126,44 @@ h4 {
 	align-items: center;
 }
 
-.desc {
+.desc1 {
 	flex-direction: column;
 	justify-content: flex-start;
+	width: 90%;
+	padding: 15px;
+}
+
+.desc2 {
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 90%;
+	padding: 15px;
+}
+
+.desc1 p {
+	color: #00D1CA;
+	font-size: 1.1em;
+	line-height: 25px;
+}
+
+.desc1 p em {
+	font-family: Monaco;
+	font-size: 1.1em;
+	font-style: normal;
+	color: #81FFFB;
+}
+
+.desc2 p {
+	color: #C880FF;
+	font-size: 1.1em;
+	line-height: 25px;
+}
+
+.desc2 p em {
+	font-family: Monaco;
+	font-size: 1em;
+	font-style: normal;
+	color: #E1B8FF;
 }
 
 .navigation {
@@ -112,6 +181,7 @@ h4 {
 .about-me {
 	flex-direction: column;
 	padding: 15px;
+	align-items: flex-start;
 	/*width: 70%;*/
 }
 
@@ -119,4 +189,10 @@ h4 {
 	flex-direction: column;
 	width: 30%;
 	align-items: center;
+	border: 2px solid #CCCCCC;
+}
+
+.contact-me button {
+	margin: 10px;
+	height: 50px;
 }
